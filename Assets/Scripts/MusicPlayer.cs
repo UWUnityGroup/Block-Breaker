@@ -4,9 +4,8 @@ using System.Collections;
 public class MusicPlayer : MonoBehaviour {
 
     static MusicPlayer INSTANCE = null;
-
-	// Use this for initialization
-	void Start () {
+    
+	void Awake () {
         if (INSTANCE != null)
         {
             Destroy(gameObject);
